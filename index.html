@@ -7,55 +7,61 @@
 </head>
 <body>
     <header class="header">
-        <nav class="header__navigation">
-            <div class="header__left-nav">
-                <a class="header__item header__item--menu" href="#"><img class="header__image" src="img/menu.svg" alt="menu"></a>
-                <a class="header__item header__item--logo" href="#"><img class="header__image" src="img/logo.svg" alt="logo"></a>
-                <a class="header__item header__item--line" href="#"><img class="header__image" src="img/line.svg" alt=""></a>
-            </div>
-            <div class="header__middle-nav">
-                <a class="header__item header__item--call" href="#"><img class="header__image" src="img/call.svg" alt="call"></a>
-                <a class="header__item header__item--chat" href="#"><img class="header__image" src="img/chat.svg" alt="chat"></a>
-                <a class="header__item header__item--profile" href="#"><img class="header__image" src="img/profile.svg" alt="profile"></a>
-            </div>
-            <div class="header__right-nav">
-                <a class="header__item header__item--line header__item--line_right" href="#"><img class="header__image" src="img/line.svg" alt=""></a>
-                <a class="header__item header__item--repair" href="#"><img class="header__image" src="img/repair.svg" alt="repair"></a>
-                <a class="header__item header__item--questions" href="#"><img class="header__image" src="img/checkstatus.svg" alt="questions"></a>
-            </div>
-        </nav>
+            <ul class="header__list header__list--logo">
+                <li class="header__item header__item--menu"><button class="button"><img src="img/menu.svg" alt="menu"></button></li>
+                <li class="header__item header__item--logo"><a class="logo" href="#"><img src="img/logo.svg" alt="logo"></a></li>
+            </ul>
+            <ul class="header__list header__list--contacts">
+                <li class="header__item"><button class="button"><img src="img/call.svg" alt="call"></button></li>
+                <li class="header__item"><button class="button"><img src="img/message.svg" alt="chat"></button></li>
+                <li class="header__item"><button class="button"><img src="img/profile.svg" alt="profile"></button></li>
+            </ul>
+            <ul class="header__list header__list--help">
+                <li class="header__item header__item--repair"><button class="button"><img src="img/repair.svg" alt="repair"></button></li>
+                <li class="header__item"><button class="button"><img src="img/checkstatus.svg" alt="checkstatus"></button></li>
+            </ul>
     </header>
     <main class="main">
-        <div class="main__navigation">
-            <div class="title">
-                <img class="title__image" src="img/highlight.svg" alt="">
+            <div class="title main__title">
                 <h1 class="title__description typography-bold">Услуги и сервисы</h1>
-            </div>
-            <div class="slider">
-                <ul class="slider__list typography-regular">
-                    <li class="slider__item"><a class="slider__link slider__link--active" href="#">Ремонтируемые устройства</a></li>
-                    <li class="slider__item"><a class="slider__link" href="#">Дополнительные услуги</a></li>
-                    <li class="slider__item"><a class="slider__link" href="#">Цены на услуги</a></li>
-                    <li class="slider__item"><a class="slider__link" href="#">Специальные цены</a></li>
-                    <li class="slider__item"><a class="slider__link" href="#">Адреса сервисных центров</a></li>
-                    <li class="slider__item"><a class="slider__link" href="#">Отзывы</a></li>
+                <ul class="title__list">
+                    <li class="title__item">
+                        <button class="button__description"><span class="button__text typography-medium">Оставить заявку</span></button>
+                        <button class="button title__button">
+                            <img src="img/repair.svg" alt="repair">
+                        </button>
+                    </li>
+                    <li class="title__item">
+                        <button class="button__description typography-medium"><span class="button__text typography-medium">Статус ремонта</span></button>
+                        <button class="button title__button">
+                            <img src="img/checkstatus.svg" alt="checkstatus">
+                        </button>
+                    </li>
                 </ul>
             </div>
-        </div>
-        <article class="about">
+            <nav class="page-nav">
+                <ul class="page-nav__list typography-regular">
+                    <li class="page-nav__item"><a class="page-nav__link page-nav__link--active" href="#">Ремонтируемые устройства</a></li>
+                    <li class="page-nav__item"><a class="page-nav__link" href="#">Дополнительные услуги</a></li>
+                    <li class="page-nav__item"><a class="page-nav__link" href="#">Цены на услуги</a></li>
+                    <li class="page-nav__item"><a class="page-nav__link" href="#">Специальные цены</a></li>
+                    <li class="page-nav__item"><a class="page-nav__link" href="#">Адреса сервисных центров</a></li>
+                    <li class="page-nav__item"><a class="page-nav__link" href="#">Отзывы</a></li>
+                </ul>
+            </nav>
+        <section class="about main__about">
             <div class="about__description typography-regular">
                 <p class="about__text">Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.</p>
                 <p class="about__text about__text--m">Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера<span class="about__text about__text--l">, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.</span></p>
-                
-                <a class="about__arrow" href="#">
+                <button class="about__button">
                     <img  src="img/arrow-bottom.svg" alt="arrow-bottom">
                     <span class="about__see-more typography-medium">Читать далее</span>
-                </a>
+                </button>
             </div>
             <div class="about__company">
                 <img class="about__image" src="img/back.jpg" alt="photo_company">
             </div>
-        </article>
+        </section>
     </main>
 </body>
 </html>
