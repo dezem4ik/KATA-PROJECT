@@ -413,11 +413,11 @@ body {
 /* MENU */
 
 .pop-up {
-    
     display: block;
     width: 320px;
     margin-right: auto;
     background-color: #FFFFFF;
+    box-shadow: 10px 0 20px 0 #7E7E82;
 }
 
 .header-menu {
