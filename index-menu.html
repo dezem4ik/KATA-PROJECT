@@ -4,46 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/styles.css" type="text/css">
+    <link rel="stylesheet" href="css/fonts.css" type="text/css">
 </head>
 <body>
-    <acide class="pop-up">
-        <header class="header-menu">
-            <ul class="header-menu__list">
-                <li class="header-menu__item "><button class="button header-menu__button"><img src="img/close.svg" alt="close"></button></li>
-                    <li class="header-menu__item header-menu__item--logo"><a class="logo" href="#"><img src="img/logo.svg" alt="logo"></a></li>
-            </ul>
-            <button class="button header-menu__button"><img src="img/find.svg" alt="search"></button>
+    <acide class="acide">
+        <header class="acide-header">
+            <button class="button button-background acide-header__button"><img src="img/close.svg" alt="close"></button>
+            <a class="logo acide-header__item--logo" href="#"><img src="img/logo.svg" alt="logo"></a>
+            <button class="button button-background acide-header__button acide-header__button--find"><img src="img/find.svg" alt="search"></button>
         </header>
-        <section class="main-menu main-menu__nav-menu">
-            <nav class="menu-nav">
-                <ul class="menu-nav__list typography-medium">
-                    <li class="menu-nav__item"><a class="menu-nav__link menu-nav__link--active" href="#">Ремонт техники</a></li>
-                    <li class="menu-nav__item"><a class="menu-nav__link" href="#">Услуги и сервисы</a></li>
-                    <li class="menu-nav__item"><a class="menu-nav__link" href="#">Корпоративным клиентам</a></li>
-                    <li class="menu-nav__item"><a class="menu-nav__link" href="#">Продавцам техники</a></li>
-                    <li class="menu-nav__item"><a class="menu-nav__link" href="#">Партнерам</a></li>
-                    <li class="menu-nav__item"><a class="menu-nav__link" href="#">Производителям</a></li>
-                    <li class="menu-nav__item"><a class="menu-nav__link" href="#">Наши сервисные центры</a></li>
-                    <li class="menu-nav__item"><a class="menu-nav__link" href="#">Контакты</a></li>
+        <section class="acide-nav acide-nav__nav-menu">
+            <nav class="acide-nav__menu">
+                <ul class="acide-nav__list typography-medium">
+                    <li class="acide-nav__item"><a class="acide-nav__link acide-nav__link--active" href="#">Ремонт техники</a></li>
+                    <li class="acide-nav__item"><a class="acide-nav__link" href="#">Услуги и сервисы</a></li>
+                    <li class="acide-nav__item"><a class="acide-nav__link" href="#">Корпоративным клиентам</a></li>
+                    <li class="acide-nav__item"><a class="acide-nav__link" href="#">Продавцам техники</a></li>
+                    <li class="acide-nav__item"><a class="acide-nav__link" href="#">Партнерам</a></li>
+                    <li class="acide-nav__item"><a class="acide-nav__link" href="#">Производителям</a></li>
+                    <li class="acide-nav__item"><a class="acide-nav__link" href="#">Наши сервисные центры</a></li>
+                    <li class="acide-nav__item"><a class="acide-nav__link" href="#">Контакты</a></li>
                 </ul>
             </nav>
         </section>
-        <section class="feedback-menu feedback-menu__nav">
-            <nav>
-                <ul class="feedback-menu__list">
-                    <li class="feedback-menu__item"><button class="button feedback-menu__button header-menu__button"><img src="img/call.svg" alt="call"></button></li>
-                    <li class="feedback-menu__item"><button class="button feedback-menu__button header-menu__button"><img src="img/message.svg" alt="chat"></button></li>
-                    <li class="feedback-menu__item"><button class="button feedback-menu__button header-menu__button"><img src="img/profile.svg" alt="profile"></button></li>
-                </ul>
-                <span class="feedback-menu__mail typography-medium">mail@cps.com</span>
-                <h1 class="feedback-menu__phone typography-bold">8 800 890 8900</h1>
-            </nav>
-        </section>
-        <footer class="footer-menu footer-menu__lang">
-            <ul class="footer-menu__list">
-                <li class="footer-menu__item"><button class="footer-menu__button footer-menu__button-active">RU</button></li>
-                <li class="footer-menu__item"><button class="footer-menu__button">EN</button></li>
-                <li class="footer-menu__item"><button class="footer-menu__button">CH</button></li>
+        <footer class="acide-footer acide-footer__page">
+            <ul class="acide-footer__list">
+                <li class="acide-footer__item"><button class="button button-background acide-footer__button"><img src="img/call.svg" alt="call"></button></li>
+                <li class="acide-footer__item"><button class="button button-background acide-footer__button"><img src="img/message.svg" alt="chat"></button></li>
+                <li class="acide-footer__item"><button class="button button-background acide-footer__button"><img src="img/profile.svg" alt="profile"></button></li>
+            </ul>
+            <adress class="adress">
+                <a href="#" class="adress__mail typography-medium">mail@cps.com</a>
+                <a href="#" class="adress__phone typography-bold">8 800 890 8900</a>
+            </adress>
+            <ul class="lang acide-footer__lang">
+                <li class="lang__item"><button class="lang__button lang__button-active">RU</button></li>
+                <li class="lang__item"><button class="lang__button">EN</button></li>
+                <li class="lang__item"><button class="lang__button">CH</button></li>
             </ul>
         </footer>
     </acide>

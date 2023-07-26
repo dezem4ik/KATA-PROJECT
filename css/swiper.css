@@ -1,0 +1,71 @@
+@media (max-width: 768px) {
+    .swiper {
+        height: 132px;
+    }
+}
+
+@media (max-width: 768px) { 
+    .swiper .swiper-wrapper {
+        padding: 16px 0 0 16px;
+    }
+}
+
+@media (max-width: 768px) { 
+    .swiper .swiper-pagination {
+        bottom: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .swiper .swiper-pagination-bullet {
+        background-color: #DDDDDD;
+        width: 12px;
+        height: 12px;
+    }
+}
+
+@media (max-width: 768px) {
+    .swiper .swiper-pagination-bullet-active {
+        background-color: #B5B6BC;
+    }
+}
+
+@media (min-width: 768px) {
+    .swiper-brand__wrapper {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+}
+
+@media (min-width: 768px) {
+    .swiper .swiper-wrapper .swiper-brand__slide {
+        width: 224px;
+        height: 72px;
+        padding: 0 0 16px 24px;
+    }
+}
+
+@media (min-width: 1120px) {
+    .swiper .swiper-wrapper .swiper-brand__slide {
+        width: 240px;
+        padding: 0 0 16px 32px;
+    }
+}
+
+@media (min-width: 768px) {
+    .swiper .swiper-wrapper .brand-button__hide {
+        display: none;
+    }
+}
+@media (min-width: 768px) {
+    .swiper .swiper-wrapper .brand-button__hide-width {
+        display: none;
+    }
+}
+
+@media (min-width: 1016px) {
+    .swiper .swiper-wrapper .brand-button__hide-width {
+        display: block;
+    }
+}

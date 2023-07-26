@@ -1,0 +1,24 @@
+.section-title__brands {
+    background-image: linear-gradient(to right, #F8F8F8,#FFFFFF);
+    padding: 16px 0 16px 16px;
+}
+
+@media (min-width: 768px) {
+    .section-title__brands {
+        margin-bottom: 24px;
+        padding: 16px 0 16px 24px;
+    }
+}
+
+@media (min-width: 1120px) {
+    .section-title__brands {
+        padding: 16px 0 16px 32px;
+    }
+}
+
+.section-title__text {
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #7E7E82;
+}

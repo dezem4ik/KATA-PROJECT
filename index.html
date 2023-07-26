@@ -4,38 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/styles.css" type="text/css">
+    <link rel="stylesheet" href="css/fonts.css" type="text/css">
 </head>
 <body>
     <header class="header">
             <ul class="header__list header__list--logo">
-                <li class="header__item header__item--menu"><button class="button"><img src="img/menu.svg" alt="menu"></button></li>
+                <li class="header__item header__item--menu"><button class="button button-background"><img src="img/menu.svg" alt="menu"></button></li>
                 <li class="header__item header__item--logo"><a class="logo" href="#"><img src="img/logo.svg" alt="logo"></a></li>
             </ul>
-            <ul class="header__list header__list--contacts">
-                <li class="header__item"><button class="button"><img src="img/call.svg" alt="call"></button></li>
-                <li class="header__item"><button class="button"><img src="img/message.svg" alt="chat"></button></li>
-                <li class="header__item"><button class="button"><img src="img/profile.svg" alt="profile"></button></li>
+            <ul class="contacts header-contacts">
+                <li class="contacts__item"><button class="button button-background"><img src="img/call.svg" alt="call"></button></li>
+                <li class="contacts__item"><button class="button button-background"><img src="img/message.svg" alt="chat"></button></li>
+                <li class="contacts__item"><button class="button button-background"><img src="img/profile.svg" alt="profile"></button></li>
             </ul>
             <ul class="header__list header__list--help">
-                <li class="header__item header__item--repair"><button class="button"><img src="img/repair.svg" alt="repair"></button></li>
-                <li class="header__item"><button class="button"><img src="img/checkstatus.svg" alt="checkstatus"></button></li>
+                <li class="header__item header__item--repair"><button class="button button-background"><img src="img/repair.svg" alt="repair"></button></li>
+                <li class="header__item"><button class="button button-background"><img src="img/checkstatus.svg" alt="checkstatus"></button></li>
             </ul>
     </header>
     <main class="main">
             <div class="title main__title">
                 <h1 class="title__description typography-bold">Услуги и сервисы</h1>
                 <ul class="title__list">
-                    <li class="title__item">
-                        <button class="button__description"><span class="button__text typography-medium">Оставить заявку</span></button>
-                        <button class="button title__button">
-                            <img src="img/repair.svg" alt="repair">
-                        </button>
+                    <li class="title__item"><a class="title__button-link" href="#">
+                            <span class="button__text button__description typography-medium">
+                                Оставить заявку
+                            </span>
+                            <button class="button button-background title__button">
+                                <img src="img/repair.svg" alt="repair">
+                            </button>
+                        </a>
                     </li>
                     <li class="title__item">
-                        <button class="button__description typography-medium"><span class="button__text typography-medium">Статус ремонта</span></button>
-                        <button class="button title__button">
-                            <img src="img/checkstatus.svg" alt="checkstatus">
-                        </button>
+                        <a class="title__button-link" href="#">
+                            <span class="button__description button__text typography-medium">
+                                Статус ремонта
+                            </span>
+                            <button class="button button-background title__button">
+                                <img src="img/checkstatus.svg" alt="checkstatus">
+                            </button>
+                        </a>
                     </li>
                 </ul>
             </div>
