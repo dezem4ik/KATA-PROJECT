@@ -22,12 +22,29 @@
     }
 }
 
-.dropdown {
+.brand-button:hover {
+    border: solid 2px #B5B6BC;
+}
+
+.brand-button:hover .dropdown {
+    background-color: #DDDDDD;
+}
+
+/*.dropdown {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 40px;
     height: 40px;
+    border-radius: 50%;
+    border: 2px solid #FF3E79;
+    background-color: #FFFFFF;
+}
+*/
+
+.dropdown {
+    display: inline-block;
+    padding: 14px 15.5px 14px 17px;
     border-radius: 50%;
     border: 2px solid #FF3E79;
     background-color: #FFFFFF;

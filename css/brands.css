@@ -1,7 +1,13 @@
+
+
 @media (max-width: 768px) {
-    .swiper {
+    .brands {
         height: 132px;
     }
+}
+
+.brands .brands__list {
+    list-style-type: none;
 }
 
 @media (max-width: 768px) { 
@@ -31,15 +37,19 @@
 }
 
 @media (min-width: 768px) {
-    .swiper-brand__wrapper {
+    .brands__list {
         display: flex;
         flex-wrap: wrap;
     }
 
 }
 
+.brands .brands__list .brands__item {
+    width: 240px;
+}
+
 @media (min-width: 768px) {
-    .swiper .swiper-wrapper .swiper-brand__slide {
+    .brands .brands__list .brands__item {
         width: 224px;
         height: 72px;
         padding: 0 0 16px 24px;
@@ -47,25 +57,25 @@
 }
 
 @media (min-width: 1120px) {
-    .swiper .swiper-wrapper .swiper-brand__slide {
+    .brands .brands__list .brands__item {
         width: 240px;
         padding: 0 0 16px 32px;
     }
 }
 
 @media (min-width: 768px) {
-    .swiper .swiper-wrapper .brand-button__hide {
+    .brands .brands__list .brand-button__hide {
         display: none;
     }
 }
 @media (min-width: 768px) {
-    .swiper .swiper-wrapper .brand-button__hide-width {
+    .brands .brands__list .brand-button__hide-width {
         display: none;
     }
 }
 
 @media (min-width: 1016px) {
-    .swiper .swiper-wrapper .brand-button__hide-width {
+    .brands .brands__list .brand-button__hide-width {
         display: block;
     }
 }
