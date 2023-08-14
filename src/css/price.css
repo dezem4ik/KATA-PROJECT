@@ -21,6 +21,15 @@
         padding: 16px;
     }
 
+    .prices__item:hover .button-price{
+        box-shadow: -1px 2px 2px 2px #7E7E82
+    }
+
+    .prices__item:hover{
+        outline:1px solid black;
+        outline-offset:-2px;
+    }
+
     .prices__container {
         display: flex;
         flex-direction: column;
