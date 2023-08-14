@@ -1,17 +1,21 @@
-@import "~normalize.css";
+@import "aside.css";
 @import "brands.css";
 @import "brand-button.css";
 @import "popup-button.css";
 @import "section-title.css";
 @import "fonts.css";
+@import "price.css";
+@import "footer.css";
+@import "modal.css";
+@import "~normalize.css";
+
+* {
+  padding: 0;
+  margin: 0;
+}
 
 html {
   box-sizing: border-box;
-}
-
-* {
-  margin: 0;
-  padding: 0;
 }
 
 body {
@@ -403,150 +407,9 @@ body {
   }
 }
 
+@media (min-width: 1440px) {
 
-
-/* MENU */
-
-.acide {
-  display: block;
-  width: 320px;
-  margin-right: auto;
-  background-color: #FFFFFF;
-  box-shadow: 10px 0 20px 0 #7E7E82;
-}
-
-.acide-header {
-  display: flex;
-  align-items: center;
-  padding: 18px 24px;
-}
-
-.acide-header__button {
-  position: relative;
-  transition: all 0.5s ease;
-}
-
-.acide-header__button--find {
-  margin-left: auto;
-}
-
-.acide-header__item--logo {
-  margin-left: 16px;
-}
-
-.acide-nav__list {
-  list-style: none;
-}
-
-.acide-nav__link {
-  display: block;
-  text-decoration: none;
-  color: #1B1C21;
-  padding: 16px 0 16px 24px;
-  font-size: 16px;
-  line-height: 24px;
-}
-
-.acide-nav__link:hover::before {
-  content: "";
-  position: absolute;
-  height: 32px;
-  width: 4px;
-  left: 0;
-  background-color: #41F6D7;
-  border-radius: 0 4px 4px 0;
-}
-
-.acide-nav__link:hover {
-  text-decoration: underline;
-  color: #7E7E82;
-}
-
-.acide-nav__link--active {
-  color: #7E7E82;
-}
-
-.acide-nav__link--active::before {
-  content: "";
-  position: absolute;
-  height: 32px;
-  width: 4px;
-  left: 0;
-  background-color: #41F6D7;
-  border-radius: 0 4px 4px 0;
-}
-
-.acide-nav__nav-menu {
-  margin-top: 16px;
-}
-
-.acide-footer__list {
-  display: flex;
-  list-style: none;
-}
-
-.acide-footer__item:nth-child(2) {
-  margin: 0 16px;
-}
-
-.adress__phone {
-  display: block;
-  text-decoration: none;
-  color: #1B1C21;
-  padding-top: 16px;
-  font-size: 24px;
-  line-height: 32px;
-}
-
-.adress__phone:hover {
-  text-decoration: underline;
-}
-
-.adress__mail {
-  display: block;
-  text-decoration: none;
-  color: #1B1C21;
-  padding-top: 16px;
-  font-size: 16px;
-  line-height: 24px;
-}
-
-.adress__mail:hover {
-  text-decoration: underline;
-}
-
-.acide-footer__page {
-  margin-top: 268px;
-  padding-left: 24px;
-}
-
-.acide-footer__lang {
-  padding: 40px 0 32px 0;
-}
-
-.lang {
-  display: flex;
-  list-style: none;
-}
-
-.lang__button {
-  cursor: pointer;
-  border: none;
-  background-color: #FFFFFF;
-  font-size: 16px;
-  line-height: 24px;
-  font-family: 'TTLakes-Medium';
-}
-
-.lang__button:hover {
-  text-decoration: underline;
-  color: #7E7E82;
-}
-
-.lang__button-active {
-  color: #7E7E82;
-}
-
-.lang__item:nth-child(2) {
-  padding: 0 7px;
+  .main {
+    display: flex;
+  }
 }

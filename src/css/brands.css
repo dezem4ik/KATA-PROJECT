@@ -2,9 +2,20 @@
 
 @media (max-width: 768px) {
     .brands {
-        height: 132px;
+        height: 128px;
     }
 }
+
+@media (max-width: 768px) {
+    .brands.brands-height {
+        height: 208px;
+    }
+}
+
+.brands__pagination.swiper-pagination {
+    bottom: 0px;
+}
+
 
 .brands .brands__list {
     list-style-type: none;
@@ -16,11 +27,7 @@
     }
 }
 
-@media (max-width: 768px) { 
-    .swiper .swiper-pagination {
-        bottom: 0;
-    }
-}
+
 
 @media (max-width: 768px) {
     .swiper .swiper-pagination-bullet {
@@ -63,6 +70,8 @@
     }
 }
 
+
+
 @media (min-width: 768px) {
     .brands .brands__list .brand-button__hide {
         display: none;
@@ -79,3 +88,41 @@
         display: block;
     }
 }
+
+.section-brands, .section-repair, .section-price {
+    margin-top: 24px;
+}
+
+@media (min-width: 768px) {
+    .section-brands, .section-repair, .section-price {
+        margin-top: 32px;
+    }
+}
+
+@media (min-width: 1120px) {
+    .section-brands, .section-repair, .section-price {
+        margin-top: 50px;
+    }
+}
+
+.brands__item.brands__item-height.swiper-slide {
+    height: 160px;
+}
+
+.brand-button.brand-button-height {
+    height: 160px;
+    align-items: start;
+}
+
+.brand-button__description {
+    margin-top: 16px;
+}
+
+.button__dropdown {
+    margin-top: 98px;
+}
+
+.brands-active .brands__list .brand-button__hide {
+    display: block;
+}
+

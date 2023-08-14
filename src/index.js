@@ -10,6 +10,7 @@ import './images/menu.svg';
 import './images/message.svg';
 import './images/profile.svg';
 import './images/repair.svg';
+import './images/dropdown_white.svg';
 import './images/brands/acer.svg';
 import './images/brands/apple.svg';
 import './images/brands/bosch.svg';
@@ -42,6 +43,8 @@ new Swiper('.swiper', {
     }
 });
 
+
+//brands
 const openButtonPopup = document.querySelector('.popup-button__show');
 const closeButtonPopup = document.querySelector('.popup-button__hide');
 const brandButtonHide = document.querySelectorAll('.brand-button__hide')
@@ -63,3 +66,100 @@ function togglePopup() {
 openButtonPopup.addEventListener('click', togglePopup);
 closeButtonPopup.addEventListener('click', togglePopup);
 
+//repair
+const openRepairPopup = document.querySelector('.popup-repair__show');
+const closeRepairPopup = document.querySelector('.popup-repair__hide');
+const brandRepairHide = document.querySelectorAll('.repair__button-hide')
+
+function toggleRepairPopup() {
+    openRepairPopup.classList.toggle('popup-repair__hide');
+    closeRepairPopup.classList.toggle('popup-repair__hide');
+    
+    for (let i = 0; i < brandRepairHide.length; i++) {
+        brandRepairHide[i].classList.toggle('repair__button-hide');
+    }
+
+}
+
+openRepairPopup.addEventListener('click', toggleRepairPopup);
+closeRepairPopup.addEventListener('click', toggleRepairPopup);
+
+//modal__feedback
+const popup = document.querySelector('.modal');
+const openAsideModal = document.querySelector('.button-aside-call');
+const openModal = document.querySelector('.button-call');
+const closeModal = document.querySelector('.modal__feedback-button')
+
+function toggleModal () {
+    popup.classList.toggle('modal-show__feedback')
+}
+
+function closeOnKeyOutside(event) {
+    if (event.keyCode === 27) {
+        popup.classList.remove('modal-show__feedback');
+    }
+}
+
+openAsideModal.addEventListener('click', toggleModal)
+openModal.addEventListener('click', toggleModal)
+closeModal.addEventListener('click', toggleModal)
+document.addEventListener('keydown', closeOnKeyOutside)
+document.addEventListener('click', function(event) {
+    const clickedElement = event.target;
+    if (!popup.contains(clickedElement) && !openModal.contains(clickedElement) && !openAsideModal.contains(clickedElement)) {
+        popup.classList.remove('modal-show__feedback')
+    }
+});
+
+
+//modal__call
+const popupCallModal = document.querySelector('.modal__call');
+const openAsideCallModal = document.querySelector('.button-aside-message');
+const openCallModal = document.querySelector('.button-message');
+const closeCallModal = document.querySelector('.modal__call-button')
+
+function toggleCallModal () {
+    popupCallModal.classList.toggle('modal-show__call')
+}
+
+function closeCallModalOnKey(event) {
+    if (event.keyCode === 27) {
+        popupCallModal.classList.remove('modal-show__call');
+    }
+}
+
+openAsideCallModal.addEventListener('click', toggleCallModal)
+openCallModal.addEventListener('click', toggleCallModal)
+closeCallModal.addEventListener('click', toggleCallModal)
+document.addEventListener('keydown', closeCallModalOnKey)
+document.addEventListener('click', function(event) {
+    const clickedElement = event.target;
+    if (!popupCallModal.contains(clickedElement) && !openCallModal.contains(clickedElement) && !openAsideCallModal.contains(clickedElement)) {
+        popupCallModal.classList.remove('modal-show__call')
+    }
+});
+
+//menu
+const popupMenu = document.querySelector('.acide')
+const openMenu = document.querySelector('.button-menu')
+const closeMenu = document.querySelector('.button-close')
+
+function toggleMenu () {
+    popupMenu.classList.toggle('acide-show')
+}
+
+function closePopupMenu(event) {
+    if (event.keyCode === 27) {
+        popupMenu.classList.remove('acide-show');
+    }
+}
+
+openMenu.addEventListener('click', toggleMenu)
+closeMenu.addEventListener('click', toggleMenu)
+document.addEventListener('keydown', closePopupMenu)
+document.addEventListener('click', function(event) {
+    const clickedElement = event.target;
+    if (!popupMenu.contains(clickedElement) && !openMenu.contains(clickedElement)) {
+        popupMenu.classList.remove('acide-show')
+    }
+});

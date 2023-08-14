@@ -1,0 +1,126 @@
+.modal__feedback.modal-show__feedback {
+    display: flex;
+}
+
+.modal__feedback.modal-show__call {
+    display: flex;
+}
+
+.modal__feedback {
+    position: absolute;
+    box-sizing: border-box;
+    display: none;
+    flex-direction: column;
+    width: 320px;
+    height: 760px;
+    background-color: #FFFFFF;
+    padding: 24px 16px 75px 16px;
+    margin-left: auto;
+    top: 0;
+    right: 0;
+    z-index: 1;
+}
+
+@media (max-width: 768px) {
+    .modal__feedback {
+        width: 100%;
+        z-index: 2;
+    }
+}
+
+.modal_description {
+    margin-top: 40px;
+}
+
+.title__description.modal_description::before {
+    left: -16px;
+}
+
+.input {
+    margin-top: 16px;
+    border: 1px solid #EAEAEA;
+    border-radius: 6px;
+    width: 272px;
+    height: 48px;
+    padding-left: 16px;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.input::placeholder {
+    color: #B5B6BC;
+}
+
+.input:first-child {
+    margin-top: 24px;
+}
+
+.textarea {
+    border: 1px solid #EAEAEA;
+    border-radius: 6px;
+    width: 272px;
+    height: 118px;
+    font-family: 'TTLakes-Medium';
+    padding: 12px 0 0 16px;
+    margin-top: 16px;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.textarea::placeholder {
+    color: #B5B6BC;
+}
+
+
+.text-color {
+    color: #FF3E79;
+}
+
+.modal__feedback-text {
+    margin-top: 16px;
+    color: #7E7E82;
+}
+
+.button-price.modal__feedback-button-price {
+    width: 136px;
+    margin-top: 16px;
+}
+
+.modal__feedback-button {
+    height: 40px;
+    left: -2px;
+    top: 4px;
+}
+
+.modal__call-button {
+    height: 40px;
+    left: -2px;
+    top: 4px;
+}
+
+@media (min-width: 1440px) {
+    .modal__feedback {
+        width: 440px;
+        height: 940px;
+        padding: 24px 32px 0 32px;
+    }
+    .modal__feedback-button {
+        position: absolute;
+        left: -73px;
+        top: 40px;
+    }
+
+    .modal__call-button {
+        position: absolute;
+        left: -73px;
+        top: 40px;
+    }
+
+    .modal_description {
+        margin-top: 16px;
+    }
+
+    .title__description.modal_description::before {
+        left: -32px;
+    }
+}

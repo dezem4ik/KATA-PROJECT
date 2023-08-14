@@ -4,6 +4,10 @@
 }
 
 @media (min-width: 768px) {
+    .section-title__brands.section-title__brands-desktop {
+        padding-left: 0;
+    }
+    
     .section-title__brands {
         margin-bottom: 24px;
         padding: 16px 0 16px 24px;
@@ -11,9 +15,15 @@
 }
 
 @media (min-width: 1120px) {
+    .section-title__brands.section-title__brands-desktop {
+        padding-left: 0;
+    }
+
     .section-title__brands {
         padding: 16px 0 16px 32px;
     }
+
+    
 }
 
 .section-title__text {
@@ -22,4 +32,9 @@
     line-height: 24px;
     text-transform: uppercase;
     color: #7E7E82;
+}
+
+.bck {
+    background-image: url('../images/brands/dropdown.svg');
+    fill: blue;
 }

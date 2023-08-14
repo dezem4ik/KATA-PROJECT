@@ -43,3 +43,15 @@
         margin-left: 32px;
     }
 }
+
+.repair__button-hide {
+    display: none;
+}
+
+.popup-repair__hide {
+    display: none;
+}
+
+.popup-repair__show {
+    margin-left: 17px;
+}
