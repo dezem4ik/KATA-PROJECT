@@ -172,7 +172,7 @@
     }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1120px) {
     .acide {
         display: block;
         position: static;

@@ -408,9 +408,21 @@ body {
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1120px) {
 
   .main {
     display: flex;
   }
+}
+
+.modal-active {
+  opacity: 0.1;
+}
+
+.modal-active-header {
+  opacity: 0.1;
+}
+
+.modal-header-active {
+  opacity: 0.1;
 }

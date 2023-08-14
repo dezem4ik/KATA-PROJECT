@@ -89,14 +89,21 @@ const popup = document.querySelector('.modal');
 const openAsideModal = document.querySelector('.button-aside-call');
 const openModal = document.querySelector('.button-call');
 const closeModal = document.querySelector('.modal__feedback-button')
+const mainFeedbackElement = document.querySelector('.main');
+const headerFeedbackElement = document.querySelector('.header')
 
 function toggleModal () {
     popup.classList.toggle('modal-show__feedback')
+    headerElement.classList.toggle('modal-header-active')
+    mainElement.classList.toggle('modal-header-active');
+
 }
 
 function closeOnKeyOutside(event) {
     if (event.keyCode === 27) {
         popup.classList.remove('modal-show__feedback');
+        headerElement.classList.remove('modal-header-active')
+        mainElement.classList.remove('modal-header-active');
     }
 }
 
@@ -108,6 +115,8 @@ document.addEventListener('click', function(event) {
     const clickedElement = event.target;
     if (!popup.contains(clickedElement) && !openModal.contains(clickedElement) && !openAsideModal.contains(clickedElement)) {
         popup.classList.remove('modal-show__feedback')
+        headerElement.classList.remove('modal-header-active')
+        mainElement.classList.remove('modal-header-active');
     }
 });
 
@@ -117,14 +126,20 @@ const popupCallModal = document.querySelector('.modal__call');
 const openAsideCallModal = document.querySelector('.button-aside-message');
 const openCallModal = document.querySelector('.button-message');
 const closeCallModal = document.querySelector('.modal__call-button')
+const mainElement = document.querySelector('.main');
+const headerElement = document.querySelector('.header')
 
 function toggleCallModal () {
     popupCallModal.classList.toggle('modal-show__call')
+    mainElement.classList.toggle('modal-active');
+    headerElement.classList.toggle('modal-active');
 }
 
 function closeCallModalOnKey(event) {
     if (event.keyCode === 27) {
         popupCallModal.classList.remove('modal-show__call');
+        mainElement.classList.remove('modal-active');
+        headerElement.classList.remove('modal-active');
     }
 }
 
@@ -136,6 +151,8 @@ document.addEventListener('click', function(event) {
     const clickedElement = event.target;
     if (!popupCallModal.contains(clickedElement) && !openCallModal.contains(clickedElement) && !openAsideCallModal.contains(clickedElement)) {
         popupCallModal.classList.remove('modal-show__call')
+        mainElement.classList.remove('modal-active');
+        headerElement.classList.remove('modal-active');
     }
 });
 
@@ -143,14 +160,21 @@ document.addEventListener('click', function(event) {
 const popupMenu = document.querySelector('.acide')
 const openMenu = document.querySelector('.button-menu')
 const closeMenu = document.querySelector('.button-close')
+const mainContainer = document.querySelector('.main-container')
+const headerMenuActive = document.querySelector('.header-menu-active')
+
 
 function toggleMenu () {
     popupMenu.classList.toggle('acide-show')
+    mainContainer.classList.toggle('modal-active');
+    headerMenuActive.classList.toggle('modal-active-header');
 }
 
 function closePopupMenu(event) {
     if (event.keyCode === 27) {
         popupMenu.classList.remove('acide-show');
+        mainContainer.classList.remove('modal-active');
+        headerMenuActive.classList.remove('modal-active-header');
     }
 }
 
@@ -160,6 +184,8 @@ document.addEventListener('keydown', closePopupMenu)
 document.addEventListener('click', function(event) {
     const clickedElement = event.target;
     if (!popupMenu.contains(clickedElement) && !openMenu.contains(clickedElement)) {
-        popupMenu.classList.remove('acide-show')
+        popupMenu.classList.remove('acide-show');
+        mainContainer.classList.remove('modal-active');
+        headerMenuActive.classList.remove('modal-active-header');
     }
 });
