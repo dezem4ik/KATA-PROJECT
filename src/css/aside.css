@@ -1,8 +1,10 @@
-.acide.acide-show {
+.aside.aside-show {
     display: block;
+    overflow: auto;
+    max-height: 100vh
 }
 
-.acide {
+.aside {
     position:absolute;
     display: none;
     width: 320px;
@@ -12,30 +14,30 @@
     left: 0;
 }
 
-.acide-header {
+.aside-header {
     display: flex;
     align-items: center;
     padding: 19px 16px;
 }
 
-.acide-header__button {
+.aside-header__button {
     position: relative;
     transition: all 0.5s ease;
 }
 
-.acide-header__button--find {
+.aside-header__button--find {
     margin-left: auto;
 }
 
-.acide-header__item--logo {
+.aside-header__item--logo {
     margin-left: 16px;
 }
 
-.acide-nav__list {
+.aside-nav__list {
     list-style: none;
 }
 
-.acide-nav__link {
+.aside-nav__link {
     display: block;
     text-decoration: none;
     color: #1B1C21;
@@ -44,7 +46,7 @@
     line-height: 24px;
 }
 
-.acide-nav__link:hover::before {
+.aside-nav__link:hover::before {
     content: "";
     position: absolute;
     height: 32px;
@@ -54,16 +56,16 @@
     border-radius: 0 4px 4px 0;
 }
 
-.acide-nav__link:hover {
+.aside-nav__link:hover {
     text-decoration: underline;
     color: #7E7E82;
 }
 
-.acide-nav__link--active {
+.aside-nav__link--active {
     color: #7E7E82;
 }
 
-.acide-nav__link--active::before {
+.aside-nav__link--active::before {
     content: "";
     position: absolute;
     height: 32px;
@@ -73,16 +75,16 @@
     border-radius: 0 4px 4px 0;
 }
 
-.acide-nav__nav-menu {
+.aside-nav__nav-menu {
     margin-top: 16px;
 }
 
-.acide-footer__list {
+.aside-footer__list {
     display: flex;
     list-style: none;
 }
 
-.acide-footer__item:nth-child(2) {
+.aside-footer__item:nth-child(2) {
     margin: 0 16px;
 }
 
@@ -112,12 +114,12 @@
     text-decoration: underline;
 }
 
-.acide-footer__page {
+.aside-footer__page {
     margin-top: 16px;
     padding-left: 24px;
 }
 
-.acide-footer__lang {
+.aside-footer__lang {
     padding: 40px 0 32px 0;
 }
 
@@ -150,30 +152,30 @@
 
 
 @media (min-width: 360px) {
-    .acide { 
+    .aside { 
         width: 360px;
     }
 }
 
 @media (min-width: 380px) {
-    .acide {
+    .aside {
         box-shadow: 10px 0 20px 0 #7E7E82;
     }
 }
 
 @media (min-width: 768px) {
-    .acide { 
+    .aside { 
         width: 320px;
         
     }
 
-    .acide-footer__page {
+    .aside-footer__page {
         margin-top: 268px;
     }
 }
 
 @media (min-width: 1120px) {
-    .acide {
+    .aside {
         display: block;
         position: static;
         box-shadow: none;

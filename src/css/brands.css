@@ -1,12 +1,12 @@
 
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .brands {
         height: 128px;
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .brands.brands-height {
         height: 208px;
     }

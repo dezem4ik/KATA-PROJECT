@@ -19,10 +19,12 @@
     top: 0;
     right: 0;
     z-index: 1;
-    box-shadow: -5px 0 20px 0 #7E7E82
+    box-shadow: -5px 0 20px 0 #7E7E82;
+    overflow: auto;
+    max-height: 80vh
 }
 
-@media (max-width: 768px) {
+@media (max-width: 360px) {
     .modal__feedback {
         width: 100%;
         z-index: 2;
@@ -122,4 +124,16 @@
     .title__description.modal_description::before {
         left: -32px;
     }
+}
+
+.body {
+    overflow: hidden;
+}
+
+.body-remove {
+    overflow: hidden;
+}
+
+.body-delete {
+    overflow: hidden;
 }

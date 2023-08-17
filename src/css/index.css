@@ -187,6 +187,7 @@ body {
 
 .about__description {
   padding-right: 36px;
+
 }
 
 .about__company {
@@ -303,7 +304,6 @@ body {
   }
 
   .about__text--m {
-      margin-top: 16px;
       display: block;
   }
 }
@@ -393,15 +393,6 @@ body {
       font-size: 16px;
       line-height: 24px;
   }
-
-  .about__text-m {
-      display: block;
-      margin-top: 16px;
-  }
-  .about__text--l {
-      margin-left: 0;
-      display: inline;
-  }
   
   .page-nav__list {
       flex-wrap: wrap;
@@ -425,4 +416,56 @@ body {
 
 .modal-header-active {
   opacity: 0.1;
+} 
+
+.about__see-more--hide {
+  display: none;
+}
+
+.about__overflow {
+  height: 131px;
+  overflow: hidden;
+}
+
+
+
+@media (min-width: 320px) {
+  .about__overflow {
+    height: 97px;
+    overflow: hidden;
+  }
+}
+
+@media (min-width: 768px) {
+  .about__overflow {
+    height: 135px;
+    overflow: hidden;
+  }
+}
+
+@media (min-width: 862px) {
+  .about__overflow {
+    height: 113px;
+    overflow: hidden;
+  }
+}
+
+@media (min-width: 1080px) {
+  .about__overflow {
+    height: 93px;
+    overflow: hidden;
+  }
+}
+
+.about__text--hide {
+  margin-top: 16px;
+}
+
+.about__text--margin {
+  margin-top: 16px;
+}
+
+.about__text--display {
+    margin-left: 0;
+    display: inline;
 }

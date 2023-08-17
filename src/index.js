@@ -43,6 +43,24 @@ new Swiper('.swiper', {
     }
 });
 
+//Читать далее
+const openButtonSeeMore = document.querySelector('.about__see-more--show');
+const closeButtonSeeMore = document.querySelector('.about__see-more--hide');
+const deleteOverflow = document.querySelector('.about__overflow')
+const deleteTextM = document.querySelector('.about__text--m')
+const deleteTextL = document.querySelector('.about__text--l')
+
+function toggleSeeMore() {
+    openButtonSeeMore.classList.toggle('about__see-more--hide');
+    closeButtonSeeMore.classList.toggle('about__see-more--hide');
+    deleteOverflow.classList.toggle('about__overflow')
+    deleteTextM.classList.toggle('about__text--m')
+    deleteTextL.classList.toggle('about__text--l')
+}
+
+openButtonSeeMore.addEventListener('click', toggleSeeMore)
+closeButtonSeeMore.addEventListener('click', toggleSeeMore)
+
 
 //brands
 const openButtonPopup = document.querySelector('.popup-button__show');
@@ -91,12 +109,15 @@ const openModal = document.querySelector('.button-call');
 const closeModal = document.querySelector('.modal__feedback-button')
 const mainFeedbackElement = document.querySelector('.main');
 const headerFeedbackElement = document.querySelector('.header')
+const bodyRemove = document.querySelector('body')
+const inputAutofocus = document.querySelector('.input--autofocus')
 
 function toggleModal () {
     popup.classList.toggle('modal-show__feedback')
     headerElement.classList.toggle('modal-header-active')
     mainElement.classList.toggle('modal-header-active');
-
+    bodyRemove.classList.toggle('body-remove');
+    inputAutofocus.focus();
 }
 
 function closeOnKeyOutside(event) {
@@ -104,6 +125,7 @@ function closeOnKeyOutside(event) {
         popup.classList.remove('modal-show__feedback');
         headerElement.classList.remove('modal-header-active')
         mainElement.classList.remove('modal-header-active');
+        bodyRemove.classList.remove('body-remove')
     }
 }
 
@@ -117,6 +139,7 @@ document.addEventListener('click', function(event) {
         popup.classList.remove('modal-show__feedback')
         headerElement.classList.remove('modal-header-active')
         mainElement.classList.remove('modal-header-active');
+        bodyRemove.classList.remove('body-remove')
     }
 });
 
@@ -128,11 +151,15 @@ const openCallModal = document.querySelector('.button-message');
 const closeCallModal = document.querySelector('.modal__call-button')
 const mainElement = document.querySelector('.main');
 const headerElement = document.querySelector('.header')
+const body = document.querySelector('body')
+const autofocus = document.querySelector('.autofocus')
 
 function toggleCallModal () {
     popupCallModal.classList.toggle('modal-show__call')
     mainElement.classList.toggle('modal-active');
     headerElement.classList.toggle('modal-active');
+    body.classList.toggle('body');
+    autofocus.focus();
 }
 
 function closeCallModalOnKey(event) {
@@ -140,6 +167,7 @@ function closeCallModalOnKey(event) {
         popupCallModal.classList.remove('modal-show__call');
         mainElement.classList.remove('modal-active');
         headerElement.classList.remove('modal-active');
+        body.classList.remove('body')
     }
 }
 
@@ -153,28 +181,30 @@ document.addEventListener('click', function(event) {
         popupCallModal.classList.remove('modal-show__call')
         mainElement.classList.remove('modal-active');
         headerElement.classList.remove('modal-active');
+        body.classList.remove('body')
     }
 });
 
 //menu
-const popupMenu = document.querySelector('.acide')
+const popupMenu = document.querySelector('.aside')
 const openMenu = document.querySelector('.button-menu')
 const closeMenu = document.querySelector('.button-close')
 const mainContainer = document.querySelector('.main-container')
-const headerMenuActive = document.querySelector('.header-menu-active')
-
+const bodyDelete = document.querySelector('body')
 
 function toggleMenu () {
-    popupMenu.classList.toggle('acide-show')
+    popupMenu.classList.toggle('aside-show')
     mainContainer.classList.toggle('modal-active');
-    headerMenuActive.classList.toggle('modal-active-header');
+    headerElement.classList.toggle('modal-active-header');
+    bodyDelete.classList.toggle('body-delete')
 }
 
 function closePopupMenu(event) {
     if (event.keyCode === 27) {
-        popupMenu.classList.remove('acide-show');
+        popupMenu.classList.remove('aside-show');
         mainContainer.classList.remove('modal-active');
-        headerMenuActive.classList.remove('modal-active-header');
+        headerElement.classList.remove('modal-active-header');
+        bodyDelete.classList.remove('body-delete')
     }
 }
 
@@ -184,8 +214,9 @@ document.addEventListener('keydown', closePopupMenu)
 document.addEventListener('click', function(event) {
     const clickedElement = event.target;
     if (!popupMenu.contains(clickedElement) && !openMenu.contains(clickedElement)) {
-        popupMenu.classList.remove('acide-show');
+        popupMenu.classList.remove('aside-show');
         mainContainer.classList.remove('modal-active');
-        headerMenuActive.classList.remove('modal-active-header');
+        headerElement.classList.remove('modal-active-header');
+        bodyDelete.classList.remove('body-delete')
     }
 });

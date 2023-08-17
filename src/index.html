@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
+    <title>kataproject</title>
 </head>
-<body class="body">
-    <header class="header header-menu-active">
+<body>
+    <header class="header">
             <ul class="header__list header__list--logo">
                 <li class="header__item header__item--menu">
                     <button class="button button-background button-menu">
@@ -51,78 +52,78 @@
     </header>
     <main class="main">
         <div class="aside-container">
-            <acide class="acide">
-                <header class="acide-header">
-                    <button class="button button-background acide-header__button button-close">
+            <aside class="aside">
+                <header class="aside-header">
+                    <button class="button button-background aside-header__button button-close">
                         <img src="images/close.svg" alt="close">
                     </button>
-                    <a class="logo acide-header__item--logo" href="#">
+                    <a class="logo aside-header__item--logo" href="#">
                         <img src="images/logo.svg" alt="logo">
                     </a>
-                    <button class="button button-background acide-header__button acide-header__button--find">
+                    <button class="button button-background aside-header__button aside-header__button--find">
                         <img src="images/find.svg" alt="search">
                     </button>
                 </header>
-                <section class="acide-nav acide-nav__nav-menu">
-                    <nav class="acide-nav__menu">
-                        <ul class="acide-nav__list typography-medium">
-                            <li class="acide-nav__item">
-                                <a class="acide-nav__link acide-nav__link--active" href="#">
+                <section class="aside-nav aside-nav__nav-menu">
+                    <nav class="aside-nav__menu">
+                        <ul class="aside-nav__list typography-medium">
+                            <li class="aside-nav__item">
+                                <a class="aside-nav__link aside-nav__link--active" href="#">
                                     Ремонт техники
                                 </a>
                             </li>
-                            <li class="acide-nav__item">
-                                <a class="acide-nav__link" href="#">
+                            <li class="aside-nav__item">
+                                <a class="aside-nav__link" href="#">
                                     Услуги и сервисы
                                 </a>
                             </li>
-                            <li class="acide-nav__item">
-                                <a class="acide-nav__link" href="#">
+                            <li class="aside-nav__item">
+                                <a class="aside-nav__link" href="#">
                                     Корпоративным клиентам
                                 </a>
                             </li>
-                            <li class="acide-nav__item">
-                                <a class="acide-nav__link" href="#">
+                            <li class="aside-nav__item">
+                                <a class="aside-nav__link" href="#">
                                     Продавцам техники
                                 </a>
                             </li>
-                            <li class="acide-nav__item">
-                                <a class="acide-nav__link" href="#">
+                            <li class="aside-nav__item">
+                                <a class="aside-nav__link" href="#">
                                     Партнерам
                                 </a>
                             </li>
-                            <li class="acide-nav__item">
-                                <a class="acide-nav__link" href="#">
+                            <li class="aside-nav__item">
+                                <a class="aside-nav__link" href="#">
                                     Производителям
                                 </a>
                             </li>
-                            <li class="acide-nav__item">
-                                <a class="acide-nav__link" href="#">
+                            <li class="aside-nav__item">
+                                <a class="aside-nav__link" href="#">
                                     Наши сервисные центры
                                 </a>
                             </li>
-                            <li class="acide-nav__item">
-                                <a class="acide-nav__link" href="#">
+                            <li class="aside-nav__item">
+                                <a class="aside-nav__link" href="#">
                                     Контакты
                                 </a>
                             </li>
                         </ul>
                     </nav>
                 </section>
-                <footer class="acide-footer acide-footer__page">
-                    <ul class="acide-footer__list">
-                        <li class="acide-footer__item">
-                            <button class="button button-background acide-footer__button button-aside-message">
+                <footer class="aside-footer aside-footer__page">
+                    <ul class="aside-footer__list">
+                        <li class="aside-footer__item">
+                            <button class="button button-background aside-footer__button button-aside-message">
                                 <img src="images/call.svg" alt="call">
                             </button>
                         </li>
-                        <li class="acide-footer__item">
-                            <button class="button button-background acide-footer__button button-aside-call">
+                        <li class="aside-footer__item">
+                            <button class="button button-background aside-footer__button button-aside-call">
                                 <img src="images/message.svg" alt="chat">
                             </button>
                         </li>
-                        <li class="acide-footer__item">
-                            <button class="button button-background acide-footer__button">
+                        <li class="aside-footer__item">
+                            <button class="button button-background aside-footer__button">
                                 <img src="images/profile.svg" alt="profile">
                             </button>
                         </li>
@@ -135,7 +136,7 @@
                             8 800 890 8900
                         </a>
                     </adress>
-                    <ul class="lang acide-footer__lang">
+                    <ul class="lang aside-footer__lang">
                         <li class="lang__item">
                             <button class="lang__button lang__button-active">
                                 RU
@@ -153,7 +154,7 @@
                         </li>
                     </ul>
                 </footer>
-            </acide>
+            </aside>
         </div>
         <div class="main-container">
             <div class="title main__title">
@@ -217,11 +218,14 @@
             </nav>
         <section class="about main__about">
             <div class="about__description typography-regular">
-                <p class="about__text">Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.</p>
-                <p class="about__text about__text--m">Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера<span class="about__text about__text--l">, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.</span></p>
+                <div class="about__overflow">
+                    <p class="about__text">Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.</p>
+                    <p class="about__text about__text--m about__text--margin">Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера<span class="about__text about__text--l about__text--display">, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.</span></p>
+                </div>
                 <button class="about__button">
                     <img  src="images/arrow-bottom.svg" alt="arrow-bottom">
-                    <span class="about__see-more typography-medium">Читать далее</span>
+                    <span class="about__see-more about__see-more--show typography-medium">Читать далее</span>
+                    <span class="about__see-more about__see-more--hide typography-medium">Скрыть</span>
                 </button>
             </div>
             <div class="about__company">
@@ -303,7 +307,7 @@
             </div>
             <button class="popup-button section__popup-button typography-medium">
                 <img  src="images/arrow-bottom.svg" alt="arrow-bottom">
-                <span class="popup-button__show" show="brands">Показать все</span>
+                <span class="popup-button__show">Показать все</span>
                 <span class="popup-button__hide popup-button__show">Скрыть</span>
             </button>
         </section>
@@ -371,7 +375,7 @@
                         <div class="prices__container prices__container-row">
                             <div class="prices__description">
                                 <span class="prices__text">Срок</span>
-                            </div class="">
+                            </div>
                             <button class="button-price button-price__desktop">
                                 <span class="button-price__description">Заказать</span>
                                 <img class = "dropdown-white" src="images/dropdown_white.svg" alt="">
@@ -391,7 +395,7 @@
                             <div class="prices__description">
                                 <span class="prices__title prices__title-mobile">Срок</span>
                                 <span class="prices__text">30 мин</span>
-                            </div class="">
+                            </div>
                             <button class="button-price">
                                 <span class="button-price__description">Заказать</span>
                                 <img class = "dropdown-white" src="images/dropdown_white.svg" alt="">
@@ -411,7 +415,7 @@
                             <div class="prices__description">
                                 <span class="prices__title prices__title-mobile">Срок</span>
                                 <span class="prices__text">30-120 мин</span>
-                            </div class="">
+                            </div>
                             <button class="button-price">
                                 <span class="button-price__description">Заказать</span>
                                 <img class = "dropdown-white" src="images/dropdown_white.svg" alt="">
@@ -431,7 +435,7 @@
                             <div class="prices__description">
                                 <span class="prices__title prices__title-mobile">Срок</span>
                                 <span class="prices__text">30-120 мин</span>
-                            </div class="">
+                            </div>
                             <button class="button-price">
                                 <span class="button-price__description">Заказать</span>
                                 <img class = "dropdown-white" src="images/dropdown_white.svg" alt="">
@@ -451,7 +455,7 @@
                             <div class="prices__description">
                                 <span class="prices__title prices__title-mobile">Срок</span>
                                 <span class="prices__text">30-120 мин</span>
-                            </div class="">
+                            </div>
                             <button class="button-price">
                                 <span class="button-price__description">Заказать</span>
                                 <img class = "dropdown-white" src="images/dropdown_white.svg" alt="">
@@ -471,7 +475,7 @@
                             <div class="prices__description">
                                 <span class="prices__title prices__title-mobile">Срок</span>
                                 <span class="prices__text ">30-120 мин</span>
-                            </div class="">
+                            </div>
                             <button class="button-price">
                                 <span class="button-price__description">Заказать</span>
                                 <img class="dropdown-white" src="images/dropdown_white.svg" alt="">
@@ -517,56 +521,56 @@
         </button>
         <h1 class="title__description modal_description typography-bold">Обратная связь</h1>
         <form action="#">
-            <div >
-                <input class="input" placeholder="Имя" type="text" name="name" value="">
-            </div>
-            <div >
+            <label>
+                <input class="input input--autofocus" placeholder="Имя" type="text" name="name" value="" autofocus>
+            </label>
+            <label>
                 <input class="input" placeholder="Телефон" type="tel" name="tel" value="">
-            </div>
-            <div >
+            </label>
+            <label>
                 <input class="input" placeholder="Электронная почта" type="text" name="email" value="">
-            </div>
-            <div >
+            </label>
+            <label>
                 <textarea class="textarea" placeholder="Сообщение" name="text"></textarea>
-            </div>
-        </form>
-        <p class="modal__feedback-text">
-            Нажимая “отправить”, вы даете согласие на 
-            <span class="text-color">
-                обработку персональных данных
-            </span>и соглашаетесь с нашей 
-            <span class="text-color">
-                политикой конфиденциальности
-            </span>
-        </p>
-        <button class="button-price modal__feedback-button-price">
-            <span class="button-price__description">Отправить</span>
-            <img class="dropdown-white" src="images/dropdown_white.svg" alt="">
-        </button>
+            </label>
+            <p class="modal__feedback-text">
+                Нажимая “отправить”, вы даете согласие на 
+                <span class="text-color">
+                    обработку персональных данных
+                </span>и соглашаетесь с нашей 
+                <span class="text-color">
+                    политикой конфиденциальности
+                </span>
+            </p>
+            <button class="button-price modal__feedback-button-price">
+                <span class="button-price__description">Отправить</span>
+                <img class="dropdown-white" src="images/dropdown_white.svg" alt="">
+            </button>
+    </form>
     </div>
     <div class="modal__call modal__feedback">
-        <button class="button button-background acide-header__button modal__call-button">
-            <img src="images/close.svg" alt="close">
-        </button>
-        <h1 class="title__description modal_description typography-bold">Заказать звонок</h1>
-        <form action="#">
-            <div >
-                <input class="input" placeholder="Телефон" type="tel" name="tel" value="">
-            </div>
+        <form action="#"></form>
+            <button class="button button-background acide-header__button modal__call-button">
+                <img src="images/close.svg" alt="close">
+            </button>
+            <h1 class="title__description modal_description typography-bold">Заказать звонок</h1>
+            <label>
+                <input class="input autofocus" placeholder="Телефон" type="tel" name="tel" value="" >
+            </label>
+            <p class="modal__feedback-text ">
+                Нажимая “отправить”, вы даете согласие на 
+                <span class="text-color">
+                    обработку персональных данных
+                </span>и соглашаетесь с нашей 
+                <span class="text-color">
+                    политикой конфиденциальности
+                </span>
+            </p>
+            <button class="button-price modal__feedback-button-price">
+                <span class="button-price__description">Отправить</span>
+                <img class="dropdown-white" src="images/dropdown_white.svg" alt="">
+            </button>
         </form>
-        <p class="modal__feedback-text ">
-            Нажимая “отправить”, вы даете согласие на 
-            <span class="text-color">
-                обработку персональных данных
-            </span>и соглашаетесь с нашей 
-            <span class="text-color">
-                политикой конфиденциальности
-            </span>
-        </p>
-        <button class="button-price modal__feedback-button-price">
-            <span class="button-price__description">Отправить</span>
-            <img class="dropdown-white" src="images/dropdown_white.svg" alt="">
-        </button>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 </body>
